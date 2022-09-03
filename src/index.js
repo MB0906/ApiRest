@@ -30,7 +30,7 @@ app.use(cors());
 */
 app.use("/api/v1/products", v1ProductRouter);
 app.use("/api/v1/category", v1CategoryRouter);
-app.use("/", v1ReadmeRoutes);
+//app.use("/", v1ReadmeRoutes);
 
 
 app.listen(PORT, () =>{
