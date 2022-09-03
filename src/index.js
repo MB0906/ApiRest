@@ -21,7 +21,11 @@ app.use(express.json({
 app.use(cors());
 //#endregion
 
-
+/* 
+    * Se declaran las routes habilitadas de la version 1.0
+*/
+app.use("/api/v1/products", v1ProductRouter);
+app.use("/api/v1/category", v1CategoryRouter);
 
 
 app.listen(PORT, () =>{
