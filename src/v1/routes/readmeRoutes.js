@@ -5,11 +5,11 @@ const express = require("express");
 const router = express.Router();
 
 /*
-    *Se instancias las rutas que utiliza el Readme, para que cuando un persona ingresa directamente a la url salgo un mensaje para que entiende todo mejor.
+    *Se instancias las rutas que utiliza el Readme, para que cuando un persona ingresa directamente a la url salgo un mensaje para que entienda de que se trata.
 */
 router 
 
-    .get('/',(req, res) => {
+    .get("/",(req, res) => {
         res.send(`
         <h1>Hola😀</h1>
         <h2>Mi nombre es Marco Bahamonde y te cuento por que realice esta Api/Rest.</h2>
