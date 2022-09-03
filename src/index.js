@@ -3,6 +3,8 @@
 */
 const express = require("express");
 const cors = require("cors");
+const v1ProductRouter = require("./v1/routes/productRoutes");
+const v1CategoryRouter = require("./v1/routes/categoryRoutes");
 
 //#region Configuracion para que no tenga problema la Api/Rest.
 const app = express();
