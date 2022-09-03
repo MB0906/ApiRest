@@ -10,7 +10,6 @@ const pool = require("../database/database")
 const getAllProducts = async () => {
     const productAll = await pool.query('SELECT * FROM product WHERE category = 5 ORDER BY price');
     let data = JSON.parse(JSON.stringify(productAll));
-    console.log(data)
     return data;
 };
 

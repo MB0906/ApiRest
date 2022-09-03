@@ -5,7 +5,7 @@ const express = require("express");
 const cors = require("cors");
 const v1ProductRouter = require("./v1/routes/productRoutes");
 const v1CategoryRouter = require("./v1/routes/categoryRoutes");
-const v1ReadmeRoutes = require("./v1/routes/readmeRoutes");
+const v1IndexRoutes = require("./v1/routes/indexRoutes");
 
 
 //#region Configuracion para que no tenga problema la Api/Rest.
@@ -30,7 +30,7 @@ app.use(cors());
 */
 app.use("/api/v1/products", v1ProductRouter);
 app.use("/api/v1/category", v1CategoryRouter);
-app.use("/", v1ReadmeRoutes);
+app.use("/", v1IndexRoutes);
 
 
 app.listen(PORT, () =>{
